@@ -1,34 +1,87 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
 }
 
-header, nav, main, footer {
+.container {
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    margin: 10px;
     background: #fff;
     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2 {
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
     color: #333;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+main {
+    padding: 20px 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #0066cc;
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#results {
+    margin-top: 20px;
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#results h2 {
+    margin: 0 0 10px 0;
+}
+
+#results p {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #333;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
 }
 
 footer {
