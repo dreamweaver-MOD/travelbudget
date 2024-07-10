@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Budget Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Travel Budget Calculator</h1>
+        </header>
+        <main>
+            <form id="budget-form">
+                <div class="form-group">
+                    <label for="total-budget">Total Budget ($):</label>
+                    <input type="number" id="total-budget" name="totalBudget" required>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration (days):</label>
+                    <input type="number" id="duration" name="duration" required>
+                </div>
+                <div class="form-group">
+                    <label for="hotel-ratio">Hotel Ratio (%):</label>
+                    <input type="number" id="hotel-ratio" name="hotelRatio" required>
+                </div>
+                <div class="form-group">
+                    <label for="food-ratio">Food Ratio (%):</label>
+                    <input type="number" id="food-ratio" name="foodRatio" required>
+                </div>
+                <div class="form-group">
+                    <label for="transportation-ratio">Transportation Ratio (%):</label>
+                    <input type="number" id="transportation-ratio" name="transportationRatio" required>
+                </div>
+                <button type="submit">Calculate</button>
+            </form>
+            <div id="results">
+                <h2>Budget Breakdown</h2>
+                <p id="hotel-budget">Hotel: $0</p>
+                <p id="food-budget">Food: $0</p>
+                <p id="transportation-budget">Transportation: $0</p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Travel Budget Calculator</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
